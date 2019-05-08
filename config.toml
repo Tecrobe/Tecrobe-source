@@ -1,0 +1,157 @@
+# Main config file for icon theme.
+theme = "hugo-icon"
+baseURL = "https://tecrobe.github.io/"
+languageCode = "zh-CN"
+title = "Tecrobe - 科技联合会"
+
+# Hero section (from here on is for icon theme)
+[params.hero]
+  img = "images/hero_bg.jpg"
+  title = "Welcome to Tecrobe!"
+  description = "欢迎来到科技联合会！"
+
+# Navigation section
+[params.nav]
+  mission = "部门简介"
+  services = "社团活动"
+  # Include logo instead if HOME:
+  # logo = "path/to/logo"
+
+# Mission section
+[params.mission]
+  enable = true
+
+  [params.mission.images]
+    enable = false
+
+    [[params.mission.images.list]]
+      img = "images/img_3.jpg"
+    [[params.mission.images.list]]
+      img = "images/img_2.jpg"
+    [[params.mission.images.list]]
+      img = "images/img_1.jpg"
+    [[params.mission.images.list]]
+      img = "images/img_4.jpg"
+
+  [[params.mission.item]]
+    weight = 1
+    name = "tech"
+    title = "Tech"
+    subtitle = "热爱网络技术和开源软件的 Geeks，欢迎参观 [Blog](https://tecrobe.github.io/blog)"
+    description = "<p>如何你符合以下任意条件，请加入我们 : </p><ul class='checked'><li>Linux Users</li><li>爱好编程技术与算法</li><li>爱好折腾</li></ul>"
+  [[params.mission.item]]
+    weight = 2
+    name = "Science"
+    title = "Science"
+    subtitle = "热爱实验与探索的科学爱好者们"
+    description = "<p>爱好各种实验，勇于尝试，大胆作死（划掉）。</p>"
+
+  [[params.mission.item]]
+    weight = 3
+    name = "diy"
+    title = "D.I.Y"
+    subtitle = ""
+    description = ""
+
+# Services section
+[params.services]
+  enable = true
+  video = false
+  title = "社团活动"
+  description = "我们有最丰富的社团活动，以及充足的资源"
+
+  [[params.services.item]]
+    icon = "icon-eye"
+    title = "科学实验"
+    description = "一年一度的化学实验展和社团博览会，有时还会尝试危险实验"
+
+  [[params.services.item]]
+    icon = "icon-paper-plane"
+    title = "技术交流"
+    description = "专注于研(zhe)究(teng)技术，还有合作开发项目的打算。"
+
+  [[params.services.item]]
+    icon = "icon-pencil"
+    title = "Do It Yourself"
+    description = "#TODO"
+
+# Team section
+[params.team]
+  enable = false
+  title = "Meet The Team"
+  description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+
+  [[params.team.item]]
+    name = "Jean Doe"
+    position = "Chief legend"
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+    img = "images/person1.jpg"
+    email = "#"
+    telephone = "#"
+    facebook = "#"
+    twitter = "#"
+    dribbble = "#"
+    instagram = "#"
+    github = "#"
+    linkedin = "#"
+    whatsapp = "#"
+
+  [[params.team.item]]
+    name = "Alice Doe"
+    position = "Chief overlord"
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+    img = "images/person2.jpg"
+    email = "#"
+    telephone = "#"
+    facebook = "#"
+    twitter = "#"
+    dribbble = "#"
+    instagram = "#"
+    github = "#"
+    whatsapp = "#"
+
+  [[params.team.item]]
+    name = "John Doe"
+    position = "Chief haranguer"
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+    img = "images/person3.jpg"
+    email = "#"
+    telephone = "#"
+    facebook = "#"
+    twitter = "#"
+    dribbble = "#"
+    instagram = "#"
+    github = "#"
+    whatsapp = "#"
+
+  # [[params.team.item]]
+  #   name = "Jason Doe"
+  #   position = "Chief haranguer"
+  #   description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+  #   img = "images/person3.jpg"
+  #   email = "#"
+  #   telephone = "#"
+  #   facebook = "#"
+  #   twitter = "#"
+  #   dribbble = "#"
+  #   instagram = "#"
+  #   github = "#"
+  #   whatsapp = "#"
+
+# Contact section
+[params.contact]
+  enable = false
+  title = "Get In Touch"
+  message = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+  name_placeholder = "Your name"
+  email_placeholder = "Your email"
+  email_disclaimer = "We'll never share your email with anyone else."
+  message_placeholder = "Please enter a message."
+  button_text = "Submit"
+
+# Footer section
+# Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
+[params.footer]
+  enable = true
+  note = "[Tecrobe Blog](https://tecrobe.github.io/blog)"
+  
